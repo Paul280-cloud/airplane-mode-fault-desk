@@ -94,6 +94,10 @@ The list in `data/fault-types.json` is a **sample**. To use FixMyKasi's real 34 
 - **Match thresholds** (`THRESHOLDS` in `src/pipeline.mjs`) are starting values. Adjust them after you see real scores on your machine.
 - The first run of each model needs internet. Models are then stored locally.
 
+## Known issues
+
+- **`npm audit` reports 3 high-severity findings.** They all come from one advisory in `zod` (GHSA-mrhx-c7xc-m3w5, memory use when validating oversized collections), which is a dependency of `@qvac/sdk@0.22.0` (through `@qvac/inference`). The only fix npm offers is downgrading the SDK to 0.21.1, which this project does not support, so the version is left as is. The tool only processes text you type on your own machine, but please do not expose it to untrusted input on a server. Reported upstream: _link to the issue here once filed_.
+
 ## Project layout
 
 ```
