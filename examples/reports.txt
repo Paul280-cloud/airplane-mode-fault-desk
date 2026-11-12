@@ -1,0 +1,7 @@
+# One report per line. Lines starting with # are ignored.
+The street light on 5th Avenue keeps flickering and has been dark since Monday. Call me on 082 555 0134.
+There is a live wire hanging low outside my house in Mofolo and it is sparking. My name is Thandeka Mokoena, thandeka@example.com.
+La calle Libertad lleva tres días sin agua y hay una fuga grande en la esquina. Soy Carlos Ruiz, llámame al +34 612 345 678.
+Hay un bache enorme en la avenida Central, un coche ya se dañó una rueda.
+Sewage is flowing out of the manhole on Vilakazi Street and the smell is terrible. Children are playing near it.
+The bins were not collected for two weeks and rubbish is piling up next to the school.

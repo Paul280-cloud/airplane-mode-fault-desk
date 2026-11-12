@@ -1,0 +1,22 @@
+{
+  "name": "airplane-mode-fault-desk",
+  "version": "1.0.0",
+  "description": "Turns a messy community fault report into a clean, private, structured report. Runs fully offline with local AI models (QVAC SDK).",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "author": "Bheki Buthelezi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul280-cloud/airplane-mode-fault-desk.git"
+  },
+  "scripts": {
+    "desk": "node desk.mjs",
+    "demo": "node desk.mjs --file examples/reports.txt",
+    "live": "node desk.mjs --live",
+    "prefetch": "node desk.mjs --prefetch",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "engines": { "node": "22.21.x" },
+  "dependencies": { "@qvac/sdk": "0.22.0" }
+}

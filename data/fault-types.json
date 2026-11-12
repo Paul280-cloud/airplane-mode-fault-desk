@@ -1,0 +1,304 @@
+{
+  "_note": "SAMPLE fault types for the demo. To use FixMyKasi's real 34 types, replace this list (same fields). 'autoUrgent' marks types that are always urgent. 'keywords' are words a resident might use; a match adds a small score bonus.",
+  "faultTypes": [
+    {
+      "id": "faulty-streetlight",
+      "name": "Faulty streetlight",
+      "category": "Electricity",
+      "autoUrgent": false,
+      "description": "Street light is flickering, dark, not working or stays on during the day.",
+      "keywords": [
+        "streetlight",
+        "street light",
+        "street lamp",
+        "light pole",
+        "flickering",
+        "farola",
+        "alumbrado"
+      ]
+    },
+    {
+      "id": "exposed-live-wire",
+      "name": "Exposed live wire",
+      "category": "Electricity",
+      "autoUrgent": true,
+      "description": "Exposed electrical wire or cable hanging low, sparking or dangerous to touch.",
+      "keywords": [
+        "live wire",
+        "exposed wire",
+        "sparking",
+        "power line",
+        "cable"
+      ]
+    },
+    {
+      "id": "power-outage",
+      "name": "Power outage",
+      "category": "Electricity",
+      "autoUrgent": false,
+      "description": "No electricity in the street or area, transformer or substation is down.",
+      "keywords": [
+        "power outage",
+        "blackout",
+        "no electricity",
+        "no power",
+        "transformer",
+        "apagón"
+      ]
+    },
+    {
+      "id": "illegal-connection",
+      "name": "Damaged electricity box",
+      "category": "Electricity",
+      "autoUrgent": false,
+      "description": "Electricity meter box or pole is damaged, open or leaning.",
+      "keywords": [
+        "meter box",
+        "electricity box",
+        "pole"
+      ]
+    },
+    {
+      "id": "burst-water-main",
+      "name": "Burst water main",
+      "category": "Water",
+      "autoUrgent": true,
+      "description": "A big water pipe has burst and water is flooding the street.",
+      "keywords": [
+        "burst",
+        "water main",
+        "burst pipe"
+      ]
+    },
+    {
+      "id": "water-leak",
+      "name": "Water leak",
+      "category": "Water",
+      "autoUrgent": false,
+      "description": "Small water leak from a pipe, tap or meter, water running onto the road.",
+      "keywords": [
+        "water leak",
+        "leaking",
+        "leak",
+        "fuga de agua"
+      ]
+    },
+    {
+      "id": "no-water",
+      "name": "No water supply",
+      "category": "Water",
+      "autoUrgent": false,
+      "description": "No running water at home or in the area for a long time.",
+      "keywords": [
+        "no water",
+        "without water",
+        "sin agua",
+        "dry taps"
+      ]
+    },
+    {
+      "id": "low-water-pressure",
+      "name": "Low water pressure",
+      "category": "Water",
+      "autoUrgent": false,
+      "description": "Water comes out very slowly or only a trickle.",
+      "keywords": [
+        "water pressure",
+        "trickle",
+        "low pressure"
+      ]
+    },
+    {
+      "id": "sewage-overflow",
+      "name": "Sewage overflow",
+      "category": "Sanitation",
+      "autoUrgent": true,
+      "description": "Sewage is overflowing from a manhole or drain, bad smell, dirty water in the street.",
+      "keywords": [
+        "sewage",
+        "sewer",
+        "raw sewage"
+      ]
+    },
+    {
+      "id": "blocked-drain",
+      "name": "Blocked drain",
+      "category": "Sanitation",
+      "autoUrgent": false,
+      "description": "Drain or storm water channel is blocked with rubbish or sand.",
+      "keywords": [
+        "blocked drain",
+        "drain",
+        "storm water",
+        "gutter"
+      ]
+    },
+    {
+      "id": "broken-toilet-communal",
+      "name": "Broken communal toilet",
+      "category": "Sanitation",
+      "autoUrgent": false,
+      "description": "Public or communal toilet is broken, locked or dirty.",
+      "keywords": [
+        "toilet",
+        "communal toilet",
+        "public toilet"
+      ]
+    },
+    {
+      "id": "pothole",
+      "name": "Pothole",
+      "category": "Roads",
+      "autoUrgent": false,
+      "description": "A hole in the road surface that can damage cars or hurt people.",
+      "keywords": [
+        "pothole",
+        "bache"
+      ]
+    },
+    {
+      "id": "sinkhole",
+      "name": "Sinkhole or collapsed road",
+      "category": "Roads",
+      "autoUrgent": true,
+      "description": "The road has collapsed or a large hole opened up, dangerous for cars and children.",
+      "keywords": [
+        "sinkhole",
+        "collapsed road",
+        "road collapsed"
+      ]
+    },
+    {
+      "id": "damaged-sidewalk",
+      "name": "Damaged sidewalk",
+      "category": "Roads",
+      "autoUrgent": false,
+      "description": "Broken or uneven pavement or walkway.",
+      "keywords": [
+        "sidewalk",
+        "pavement",
+        "walkway",
+        "acera"
+      ]
+    },
+    {
+      "id": "missing-road-sign",
+      "name": "Missing road sign",
+      "category": "Roads",
+      "autoUrgent": false,
+      "description": "Traffic sign, stop sign or street name sign is missing or knocked over.",
+      "keywords": [
+        "road sign",
+        "stop sign",
+        "street sign",
+        "sign is missing"
+      ]
+    },
+    {
+      "id": "broken-traffic-light",
+      "name": "Broken traffic light",
+      "category": "Roads",
+      "autoUrgent": true,
+      "description": "Traffic light or robot is out, stuck or showing the wrong colour at a busy intersection.",
+      "keywords": [
+        "traffic light",
+        "robot is out",
+        "traffic signal",
+        "semáforo"
+      ]
+    },
+    {
+      "id": "uncollected-rubbish",
+      "name": "Uncollected rubbish",
+      "category": "Waste",
+      "autoUrgent": false,
+      "description": "Rubbish bins were not collected, bags piling up on the street.",
+      "keywords": [
+        "not collected",
+        "uncollected",
+        "rubbish",
+        "garbage",
+        "refuse",
+        "basura"
+      ]
+    },
+    {
+      "id": "illegal-dumping",
+      "name": "Illegal dumping",
+      "category": "Waste",
+      "autoUrgent": false,
+      "description": "People dumped rubble, tyres or household waste on an open piece of land.",
+      "keywords": [
+        "dumping",
+        "dumped",
+        "rubble",
+        "tyres"
+      ]
+    },
+    {
+      "id": "overflowing-bin",
+      "name": "Overflowing public bin",
+      "category": "Waste",
+      "autoUrgent": false,
+      "description": "Public bin or skip is full and rubbish is spilling onto the ground.",
+      "keywords": [
+        "overflowing bin",
+        "full bin",
+        "skip"
+      ]
+    },
+    {
+      "id": "fallen-tree",
+      "name": "Fallen tree or branch",
+      "category": "Safety",
+      "autoUrgent": false,
+      "description": "A tree or large branch has fallen and blocks the road or a house.",
+      "keywords": [
+        "fallen tree",
+        "tree fell",
+        "branch",
+        "árbol"
+      ]
+    },
+    {
+      "id": "broken-playground",
+      "name": "Broken playground equipment",
+      "category": "Safety",
+      "autoUrgent": false,
+      "description": "Swings, slides or jungle gym in the park are broken or unsafe for children.",
+      "keywords": [
+        "playground",
+        "swing",
+        "slide",
+        "jungle gym"
+      ]
+    },
+    {
+      "id": "open-manhole",
+      "name": "Open manhole",
+      "category": "Safety",
+      "autoUrgent": true,
+      "description": "Manhole cover is missing or open, a person or car could fall in.",
+      "keywords": [
+        "manhole cover",
+        "open manhole",
+        "missing cover",
+        "missing manhole",
+        "alcantarilla abierta"
+      ]
+    },
+    {
+      "id": "stray-dangerous-animals",
+      "name": "Dangerous stray animals",
+      "category": "Safety",
+      "autoUrgent": false,
+      "description": "Aggressive stray dogs or loose animals in the area.",
+      "keywords": [
+        "stray dog",
+        "stray dogs",
+        "aggressive dog",
+        "stray animals"
+      ]
+    }
+  ]
+}
