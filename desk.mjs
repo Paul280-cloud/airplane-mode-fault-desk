@@ -44,10 +44,11 @@ async function networkStatus() {
   }
 }
 
-function show(result, index, total) {
+function show(result, index, total, network) {
   const line = '-'.repeat(60);
   const head = total > 1 ? ` (report ${index + 1} of ${total})` : '';
   console.log(`\n${line}\nFAULT DESK RESULT${head}\n${line}`);
+  console.log(`Network:      ${network}${network === 'OFFLINE' ? ' (no internet, all on this laptop)' : ''}`);
   console.log(`Language:     ${result.language}${result.translated ? ' (translated to English)' : ''}`);
   console.log(`Masked:       ${result.privacy.maskedItems} personal detail(s) hidden`);
   console.log(`Report:       ${result.reportMasked}`);
@@ -93,7 +94,8 @@ async function main() {
         if (report === 'exit' || report === 'quit') break;
         if (report) {
           try {
-            show(await runDesk(report, adapters, faultTypes), 0, 1);
+            const result = await runDesk(report, adapters, faultTypes);
+            show(result, 0, 1, await networkStatus());
           } catch (error) {
             console.error(error.message ?? error);
           }
@@ -117,7 +119,7 @@ async function main() {
     for (const [index, report] of reports.entries()) {
       const result = await runDesk(report, adapters, faultTypes);
       results.push(result);
-      if (!flags.json) show(result, index, reports.length);
+      if (!flags.json) show(result, index, reports.length, network);
     }
     if (flags.json) console.log(JSON.stringify(results.length === 1 ? results[0] : results, null, 2));
   } catch (error) {
